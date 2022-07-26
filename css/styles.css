@@ -148,6 +148,17 @@ color: var(--accent-color);
 color: var(--accent-color);
 }
 
+.social-list-icon {
+    align-items: center;
+    margin-right: 10px;
+
+}
+
+.social-list-icon:hover,
+.social-list-icon:focus {
+    color: var(--accent-color);
+}
+
                                   /* ================  HERO   ========== */
                                   
 
