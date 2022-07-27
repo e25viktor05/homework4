@@ -376,7 +376,6 @@ background: #2F303A;
 
 }
 
-
 .social-list-link {
     /* display: block; */
     display: flex;
@@ -405,21 +404,16 @@ background: #2F303A;
 
 
                /* constant clients */
-
-
-.constant-clients {
-    margin-bottom: 94px;
-}
 .constant-client-list {
-    
+    display:flex;
+    justify-content: center;
     list-style: none;
-
+   
 }
 
-.client-list-link {
-   width: 106px;
-   height: 60px;
-}
+
+
+
 
 
 
@@ -475,6 +469,14 @@ background: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
 }
+
+
+
+
+
+
+
+
                                /*======== END OF DOCUMENT PAGE ========*/
 
 
