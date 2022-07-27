@@ -151,12 +151,13 @@ color: var(--accent-color);
 .social-list-icon {
     align-items: center;
     margin-right: 10px;
+    align-items: center;
 
 }
 
 .social-list-icon:hover,
 .social-list-icon:focus {
-    color: var(--accent-color);
+    fill: var(--accent-color);
 }
 
                                   /* ================  HERO   ========== */
@@ -199,6 +200,10 @@ background: #2F303A;
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-image/header-img.jpg);
+    background-size: cover;
+    background-color: #C4C4C4;
+
 }
 
                                  /* ===============  ADVANTAGES   =========== */
@@ -300,6 +305,7 @@ background: #2F303A;
 /* } */
 .team-section {
     background-color: #F5F4FA;
+    margin-bottom: 94px;
 }
 
 .employees-list{
@@ -360,7 +366,63 @@ background: #2F303A;
         line-height: 1.19;
         letter-spacing: 0.03em;
         color: #757575;
+        margin-bottom: 16px;
 }
+.social-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+
+}
+
+
+.social-list-link {
+    /* display: block; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+}
+.social-list-link:hover,
+.social-list-link:focus {
+    background-color: #2196F3;
+}
+
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+    fill: #FFFFFF;
+    
+}
+
+
+.social-list-icon {
+    fill: #AFB1B8;
+}
+
+
+               /* constant clients */
+
+
+.constant-clients {
+    margin-bottom: 94px;
+}
+.constant-client-list {
+    
+    list-style: none;
+
+}
+
+.client-list-link {
+   width: 106px;
+   height: 60px;
+}
+
+
+
                                  
                                      /* ===========   FOOTER  ========= */
 
