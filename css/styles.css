@@ -102,6 +102,7 @@ body {
 
 .menu-item:not(:last-child) {
 margin-right: 50px;
+align-items: center;
 }
 
 .menu-link {
@@ -149,10 +150,15 @@ color: var(--accent-color);
 }
 
 .social-list-icon {
+    /* display: flex; */
     align-items: center;
+    /* margin-right: 10px; */
+   
+}
+.social-list-item{
     margin-right: 10px;
-    align-items: center;
-
+    width: 44px;
+    height: 44px;
 }
 
 .social-list-icon:hover,
@@ -203,7 +209,8 @@ background: #2F303A;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-image/header-img.jpg);
     background-size: cover;
     background-color: #C4C4C4;
-
+max-width: 1600px;
+margin: 0 auto;
 }
 
                                  /* ===============  ADVANTAGES   =========== */
@@ -234,6 +241,17 @@ background: #2F303A;
     background-color: #F5F5F5;;
     
  } */
+
+.icon-advantage{
+    width: 270px;
+    height:120px;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+    font-display: flex;
+    align-items: center;
+}
+
+
 
  .advantages-description{
     width: 270px;
@@ -381,8 +399,8 @@ background: #2F303A;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 44px;
-    height: 44px;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
     background-color: #FFFFFF;
 }
@@ -394,6 +412,7 @@ background: #2F303A;
 .social-list-link:hover .social-list-icon,
 .social-list-link:focus .social-list-icon {
     fill: #FFFFFF;
+    cursor: pointer;
     
 }
 
@@ -403,18 +422,49 @@ background: #2F303A;
 }
 
 
-               /* constant clients */
+                           /* CONSTANT CLIENTS */
+
+
 .constant-client-list {
     display:flex;
     justify-content: center;
     list-style: none;
-   
+    
+}
+.client-list-icon{
+    width: 106px;
+    height: 60px;
+    fill: #AFB1B8;
+}
+.client-list-link:hover .client-list-icon,
+.client-list-link:focus .client-list-icon {
+    fill: #2196F3;
+    cursor: pointer;
+}
+
+.constant-client-item {
+    display: flex;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    align-items: center;
+    border-radius: 4px;
+    margin-bottom: 94px;
+}
+
+.constant-client-item:hover,
+.constant-client-item:focus {
+    border: 1px solid #2196F3;
+    cursor: pointer;
+} 
+
+.constant-client-item:not(:last-child) {
+   margin-right: 30px; 
 }
 
 
-
-
-
+                    /* ========END OF CONSTANT CLIETNS========== */
 
 
                                  
@@ -428,7 +478,6 @@ background: #2F303A;
     margin-bottom: 10px;
    }
 
-   
 
 .logo-footer{
     font-family: 'Raleway', sans-serif;
@@ -464,10 +513,61 @@ background: #2F303A;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
+
+.contact-detail:hover,
+.contact-detail:focus {
+    color: var(--accent-color);
+}
+
 .footer-color {
     background: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
+}
+
+.footer-social-list-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+.footer-social-list-item{
+    list-style: none;
+}
+.footer-paragraph {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.footer-social-list{
+display: flex;
+justify-content: center;
+gap: 10px;
+}
+
+.footer-social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    
+}
+
+.footer-social-list-icon{
+    fill:#FFFFFF;
+}
+.footer-social-list-link:hover,
+.footer-social-list-link:focus {
+    background-color: var(--accent-color);
+
 }
 
 
