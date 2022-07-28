@@ -39,10 +39,11 @@
         </nav>
         <ul class="menu list">
           <li class="menu-item">
-            <svg class="social-list-icon" width="16" height="12">
-              <use href="./images/sprite.svg#icon-envelope"></use>
-            </svg>
-            <a class="contact-email link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a class="contact-email link" href="mailto:info@devstudio.com"
+              ><svg class="social-list-icon" width="16" height="12">
+                <use href="./images/sprite.svg#icon-envelope"></use></svg
+              >info@devstudio.com</a
+            >
           </li>
           <li class="menu-item">
             <svg class="social-list-icon" width="10px" height="16px">
@@ -68,7 +69,7 @@
           <h2 class="visually-hidden">наши преимущества</h2>
           <ul class="list list-advantages">
             <li class="advantages-description">
-              <div>
+              <div class="icon-advantage-container">
                 <svg class="icon-advantage" width="70px" height="70px">
                   <use href="./images/sprite.svg#icon-advantage1"></use>
                 </svg>
@@ -79,7 +80,7 @@
               </p>
             </li>
             <li class="advantages-description">
-              <div>
+              <div class="icon-advantage-container">
                 <svg class="icon-advantage" width="70px" height="70px">
                   <use href="./images/sprite.svg#icon-advantage2"></use>
                 </svg>
@@ -90,7 +91,7 @@
               </p>
             </li>
             <li class="advantages-description">
-              <div>
+              <div class="icon-advantage-container">
                 <svg class="icon-advantage" width="70px" height="70px">
                   <use href="./images/sprite.svg#icon-advantage3"></use>
                 </svg>
@@ -101,7 +102,7 @@
               </p>
             </li>
             <li class="advantages-description">
-              <div>
+              <div class="icon-advantage-container">
                 <svg class="icon-advantage" width="70px" height="70px">
                   <use href="./images/sprite.svg#icon-advantage4"></use>
                 </svg>
@@ -367,63 +368,68 @@
 
     <!-- footer -->
     <footer class="footer-color">
-      <div class="container">
-        <a class="logo-footer" href="WebStudio./index.html" lang="en"
-          >Web<span class="logo-color-footer">Studio</span></a
-        >
+      <div class="container footer-container">
+        <div>
+          <a class="logo-footer" href="WebStudio./index.html" lang="en"
+            >Web<span class="logo-color-footer">Studio</span></a
+          >
 
-        <address>
-          <ul class="list-menu">
-            <li class="footer-menu-item">
-              <a
-                class="contacts link"
-                href="https://goo.gl/maps/xcYjVPtmM2zp14ST6"
-                target="_blank"
-                rel="noopener noreferrer"
-                >г. Киев, пр-т Леси Украинки, 26</a
-              >
+          <address>
+            <ul class="list-menu">
+              <li class="footer-menu-item">
+                <a
+                  class="contacts link"
+                  href="https://goo.gl/maps/xcYjVPtmM2zp14ST6"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="footer-menu-item">
+                <a class="contact-detail link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="footer-menu-item">
+                <a class="contact-detail link" href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="footer-social-list-container">
+          <p class="footer-paragraph">Присоединяйтесь</p>
+          <ul class="footer-social-list">
+            <li class="footer-social-list-item">
+              <a href="" class="footer-social-list-link">
+                <svg class="footer-social-list-icon" width="20" height="20">
+                  <use href="./images/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li class="footer-menu-item">
-              <a class="contact-detail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <li class="footer-social-list-item">
+              <a href="" class="footer-social-list-link">
+                <svg class="footer-social-list-icon" width="20" height="20">
+                  <use href="./images/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
             </li>
-            <li class="footer-menu-item">
-              <a class="contact-detail link" href="tel:+380961111111">+38 096 111 11 11</a>
+            <li class="footer-social-list-item">
+              <a href="" class="footer-social-list-link">
+                <svg class="footer-social-list-icon" width="20" height="20">
+                  <use href="./images/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-list-item">
+              <a href="" class="footer-social-list-link">
+                <svg class="footer-social-list-icon" width="20" height="20">
+                  <use href="./images/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
-      </div>
-      <div class="footer-social-list-container">
-        <p class="footer-paragraph">Присоединяйтесь</p>
-        <ul class="footer-social-list">
-          <li class="footer-social-list-item">
-            <a href="" class="footer-social-list-link">
-              <svg class="footer-social-list-icon" width="20" height="20">
-                <use href="./images/sprite.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="footer-social-list-item">
-            <a href="" class="footer-social-list-link">
-              <svg class="footer-social-list-icon" width="20" height="20">
-                <use href="./images/sprite.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="footer-social-list-item">
-            <a href="" class="footer-social-list-link">
-              <svg class="footer-social-list-icon" width="20" height="20">
-                <use href="./images/sprite.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="footer-social-list-item">
-            <a href="" class="footer-social-list-link">
-              <svg class="footer-social-list-icon" width="20" height="20">
-                <use href="./images/sprite.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        </div>
       </div>
     </footer>
   </body>
