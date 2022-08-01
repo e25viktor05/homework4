@@ -106,11 +106,13 @@ align-items: center;
 }
 
 .menu-link {
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-       color: #212121;
+    position: relative;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #212121;
+    
     
 }
 .menu-link:hover,
@@ -123,7 +125,7 @@ color: var(--accent-color);
 }
 
 .contact-email{
-        font-weight: 500;
+        align-items: center;
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
@@ -135,7 +137,6 @@ color: var(--accent-color);
 }
 
 .contact-phone-number {
-    font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -152,6 +153,7 @@ color: var(--accent-color);
 .social-list-icons {
     align-items: center;
     margin-right: 10px;
+    fill: currentColor;
    
 }
 .social-list-item{
@@ -172,6 +174,8 @@ color: var(--accent-color);
      background-color: #2196F3;
      border-radius: 2px;
      content: '';
+     position: absolute;
+     bottom: -28px;
     }
 
                                   /* ================  HERO   ========== */
@@ -245,10 +249,6 @@ margin: 0 auto;
      overflow: hidden;
  }
 
-/* .emoloyees-section{
-    background-color: #F5F5F5;;
-    
- } */
 .icon-advantage-container{
     display: flex;
     align-items: center;
@@ -287,21 +287,15 @@ margin: 0 auto;
 .subtitle-text{
         line-height: 1.71;
         color: #757575;
-        /* margin-bottom: 10px; */
 }
+
 .list{
     justify-content: center;
         display: flex;
 }
 
-                                   /*============= WHAT WE ARE DOING ============*/
+         /*============= WHAT WE ARE DOING ============*/
 
-/* .section-color{
-    background-color: #F5F5F5;;
-} */
- /* .section {
-    padding-top: 0px; */
- /* } */
  .what-we-do{
     padding-top: 0;
  }
@@ -327,12 +321,8 @@ margin: 0 auto;
 
 
 
-                                    /* =============  OUR TEAM  ========= */
-/* .section {
-    padding-top: 94px;
-    padding-bottom: 94px; */
+             /* =============  OUR TEAM  ========= */
 
-/* } */
 .team-section {
     background-color: #F5F4FA;
    
@@ -472,23 +462,17 @@ margin: 0 auto;
     border-color: #2196F3;
 }
 
-/* .constant-client-item:hover,
-.constant-client-item:focus {
-    border: 1px solid #2196F3;
-    border-radius: 4px;
-    cursor: pointer;
-}  */
 
 .constant-client-item:not(:last-child) {
    margin-right: 30px; 
 }
 
 
-                    /* ========END OF CONSTANT CLIETNS========== */
+        /* ========END OF CONSTANT CLIETNS========== */
 
 
                                  
-                                     /* ===========   FOOTER  ========= */
+            /* ===========   FOOTER  ========= */
 
    .footer-container{
     display: flex;
@@ -551,11 +535,7 @@ margin: 0 auto;
 }
 
 .footer-social-list-container {
-    display: block;
-    justify-content: center;
-    align-items: center;
     margin-left: 70px;
-    margin-bottom: 20px;
 }
 
 .footer-social-list-item{
@@ -570,8 +550,7 @@ margin: 0 auto;
     text-transform: uppercase;
     color: #FFFFFF;
     padding-bottom: 20px;
-   
-   
+      
 }
 
 .footer-social-list{
@@ -602,34 +581,28 @@ gap: 10px;
 }
 
 
+     /*======== END OF DOCUMENT PAGE ========*/
 
 
 
-
-
-
-                               /*======== END OF DOCUMENT PAGE ========*/
-
-
-
-/* ======End Of Portfolio Header======= */
+   
 
 
                             
-               /* ======= === PORTFOLIO PAGE === ======== */
+    /* ======= === PORTFOLIO PAGE === ======== */
     
        
        
        
-                             /*    =========Portfolio Header =========== */
-.menu-link {
-    font-family: 'Roboto';
+     /*    =========Portfolio Header =========== */
+
+     .menu-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #212121;
-    
+    position: relative;
         }
     
 .portfolio-page-header{
@@ -639,17 +612,15 @@ gap: 10px;
     }
 
 .contact-phone-number {
-    font-family: 'Roboto';
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #757575;
     padding-right: 15px;
-    
         }
+
 .contact-email {
-    font-family: 'Roboto';
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -664,10 +635,19 @@ gap: 10px;
     background-color: #2196F3;
     border-radius: 2px;
     content: '';
+    position: absolute;
+    bottom: -28px;
     
-    }            
+    }   
+    
+    .social-list-icons {
+        align-items: center;
+        margin-right: 10px;
+        fill: currentColor;
 
-                                /* ======End Of Portfolio Header======= */
+    }
+
+            /* ======End Of Portfolio Header======= */
 
                 /* =============  =======  PORTFOLIO HERO  ======   ============ */
     
@@ -678,9 +658,6 @@ gap: 10px;
  
 .portfolio-menu-item:not(:last-child){
     margin-right: 8px;
-/* border:none; */
-/* padding-left: auto;
-padding-right:auto; */
  }
 
 .portfolio-btn {
@@ -693,9 +670,10 @@ padding-right:auto; */
     padding-top: 6px;
     padding-bottom: 6px;
     padding-right: 22px;
+    padding-left: 22px;
     border:none;
     border-radius: 4px;
-    box-shadow: 0px 4px 4px 0 #F5F5F5; ;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1);
     }
 
 portfolio-btn:not(:last-child){
@@ -703,8 +681,10 @@ portfolio-btn:not(:last-child){
     }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
-    color: #FFFFFF;
+     color: #FFFFFF;
     background: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
 }
  
                     /* ======== PORTFOLIO PROJECTS =========*/ 
